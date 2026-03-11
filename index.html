@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progressive Unlock System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Project Progress</h1>
+
+    <div class="tabs" id="tab-menu">
+      <button class="tab-btn active" id="btn-intro" onclick="showTab('intro')">Intro</button>
+    </div>
+
+    <div id="content-area">
+      <div id="intro" class="tab-content active">
+        <h2>Welcome</h2>
+        <p>管理者がロックを解除すると、次のステップが表示されます。</p>
+        <img src="https://picsum.photos/id/1/600/400" alt="Intro">
+      </div>
+    </div>
+
+    <div class="footer">
+      <p id="status-msg">現在の進行度: Intro</p>
+      <small>Admin Command: [Password] + Enter</small>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

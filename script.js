@@ -1,14 +1,13 @@
 const SECRET_PASSWORD = "open"; // 解禁コマンド
 
-// ★ここで画像を指定してください（imagesフォルダに入れている前提）
+// 画像ファイルのリスト（.png形式、ファイル名指定通り）
 const IMAGE_LIST = [
-  "images/step1.jpg",
-  "images/step2.jpg",
-  "images/step3.jpg",
-  "images/step4.jpg",
-  "images/step5.jpg",
-  "images/step6.jpg",
-  "images/last.jpg"
+  "images/step1.png",
+  "images/step2.png",
+  "images/step3.png",
+  "images/step4.png",
+  "images/step5.png",
+  "images/steplast.png"
 ];
 
 const steps = ["STEP 1", "STEP 2", "STEP 3", "STEP 4", "STEP 5", "STEP 6", "STEP LAST"];

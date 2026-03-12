@@ -1,19 +1,28 @@
-const SECRET_PASSWORD = "open"; // 解禁コマンド
+const SECRET_PASSWORD = "op"; // 解禁コマンド
 
 const IMAGE_LIST = [
-  "./images/step1.png",
+  "./images/step1-1.png",
+  "./images/step1-2.png",
+  "./images/step1-3.png",
+  "./images/step1-4.png",
+  "./images/step1-5.png",
   "./images/step2.png",
   "./images/step3.png",
   "./images/step4.png",
   "./images/step5.png",
+  "./images/step6.png",
   "./images/steplast.png"
 ];
 
-const steps = ["STEP 1", "STEP 2", "STEP 3", "STEP 4", "STEP 5", "STEP LAST"];
+const steps = [
+  "STEP 1-1", "STEP 1-2", "STEP 1-3", "STEP 1-4", "STEP 1-5",
+  "STEP 2", "STEP 3", "STEP 4", "STEP 5", "STEP 6", "STEP LAST"
+];
 
 let unlockedCount = 0;
 let inputBuffer = "";
 
+// キー入力監視などはそのまま ---
 document.addEventListener('keydown', (e) => {
   if (e.key === "Enter") {
     if (inputBuffer === SECRET_PASSWORD) {
@@ -27,9 +36,6 @@ document.addEventListener('keydown', (e) => {
 
 function unlockNextStep() {
   if (unlockedCount >= steps.length) return;
-
-  // 最初の解禁（STEP 1）の時だけ、HOMEに戻るためのボタンも一緒に作るならここですが、
-  // 「完全にタブなし」から始めたい場合は、純粋に新しいタブだけを追加します。
 
   const stepName = steps[unlockedCount];
   const stepId = `step-${unlockedCount}`;

@@ -1,4 +1,4 @@
-const SECRET_PASSWORD = "op"; // 解禁コマンド
+const SECRET_PASSWORD = "open"; // 解禁コマンド
 
 const IMAGE_LIST = [
   "./images/step1-1.png",
@@ -6,6 +6,7 @@ const IMAGE_LIST = [
   "./images/step1-3.png",
   "./images/step1-4.png",
   "./images/step1-5.png",
+  "./images/step1-6.png", // ← 追加
   "./images/step2.png",
   "./images/step3.png",
   "./images/step4.png",
@@ -15,12 +16,14 @@ const IMAGE_LIST = [
 ];
 
 const steps = [
-  "STEP 1-1", "STEP 1-2", "STEP 1-3", "STEP 1-4", "STEP 1-5",
+  "STEP 1-1", "STEP 1-2", "STEP 1-3", "STEP 1-4", "STEP 1-5", "STEP 1-6",
   "STEP 2", "STEP 3", "STEP 4", "STEP 5", "STEP 6", "STEP LAST"
 ];
 
 let unlockedCount = 0;
 let inputBuffer = "";
+
+// --- 以降のロジックは変更なし ---
 
 // キー入力監視などはそのまま ---
 document.addEventListener('keydown', (e) => {

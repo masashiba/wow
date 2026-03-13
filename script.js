@@ -1,4 +1,4 @@
-const SECRET_PASSWORD = "open"; // 解禁コマンド
+const SECRET_PASSWORD = "op"; // 解禁コマンド
 
 const IMAGE_LIST = [
   "./images/step1-1.png",

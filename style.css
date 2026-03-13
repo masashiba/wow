@@ -9,6 +9,35 @@ body {
   margin: 0;
 }
 
+/* コンテナ全体の余白を調整（画像に集中させるため） */
+body {
+  margin: 0;
+  padding: 10px;
+  /* 最小限の余白 */
+  background-color: #f8f9fa;
+}
+
+/* 画像の表示設定 */
+.tab-content img {
+  width: auto;
+  /* 横幅は自動（縮尺維持） */
+  max-width: 100%;
+  /* ただし画面からはみ出さない */
+  height: 100vh;
+  /* 縦幅を画面ぴったりにする */
+  object-fit: contain;
+  /* 画面に収まるように縮尺を保つ */
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  /* 中央寄せ */
+}
+
+/* タブボタンが画像に被らないように調整が必要な場合 */
+.tabs {
+  margin-bottom: 10px;
+}
+
 .container {
   background: white;
   padding: 20px;
